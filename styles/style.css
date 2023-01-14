@@ -11,6 +11,9 @@ body {
 .header {
   padding: 87px 120px;
 }
+.hidden {
+  display: none;
+}
 /*--------------- 
 nav styles 
 -----------------*/
@@ -65,9 +68,57 @@ nav {
   padding: 10px 24px;
 }
 .banner .banner-img {
-  width: 440px;
-  height: 414px;
+  width: 475px;
+  height: 475px;
   background-image: url(../images/Circle\ design.svg);
   background-repeat: no-repeat;
   background-size: 100%;
+}
+.banner .banner-img img {
+  width: 440px;
+  height: 414px;
+  position: relative;
+  transform: translate(0, 28px);
+}
+/* Media quries */
+/* Mobile device */
+@media only screen and (max-width: 688px) {
+  .header {
+    padding: 35px 16px;
+  }
+  nav {
+    align-items: center;
+  }
+  .nav .nav-menu {
+    font-size: 22px;
+    display: block;
+  }
+  .nav-items .nav-item-6 a i {
+    font-size: 22px;
+  }
+  .banner {
+    flex-direction: column-reverse;
+    gap: 14px;
+  }
+  .banner-info {
+    text-align: center;
+  }
+  .banner-info .banner-title {
+    font-size: 28px;
+  }
+  .banner-info .banner-subtitle {
+    font-size: 14px;
+  }
+  .banner .banner-img {
+    width: 257px;
+    height: 257px;
+  }
+  .banner .banner-img img {
+    width: 202px;
+    height: 190px;
+    transform: translate(25px, 45px);
+  }
+  .hide {
+    display: none;
+  }
 }
